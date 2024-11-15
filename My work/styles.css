@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+
+}
+
+.container{
+    padding: 5px 5%;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width:0%;
+    height: 3px;
+    background:#ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+/* */
+
+.hero-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 0 26px;
+}
+
+.hero-content {
+    gap: 20px;
+    display: flex;
+}
+
+.hero-text {
+    display: flex;
+    margin-top: 8px;
+    flex-direction: column;
+    color: white;
+    font-weight: 400;
+    width: 50%;
+}
+
+.hero-title {
+    font: 128px "Rajdhani", Roboto, Helvetica, sans-serif;
+}
+
+.hero-description {
+    text-align: justify;
+    margin-top: 33px;
+    font: 36px "Rajdhani", Roboto, Helvetica, sans-serif;
+}
+
+.hero-image-wrapper {
+    width: 50%;
+    margin-left: 20px;
+}
+   
+.hero-image {
+    /* aspect-ratio: 1.72; */
+    object-fit: cover;
+    width: 85%;
+}

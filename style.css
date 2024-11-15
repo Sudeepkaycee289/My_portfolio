@@ -1,8 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     background: #080808;
@@ -10,15 +13,16 @@ body{
 
 }
 #header{
+    background-image: url(Images/Background.jpg);
     width: 100%;
     height: 100vh;
-    background-image: url(images/Background.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .container{
     padding: 10px 10%;
+    
 }
 
 nav{
@@ -102,6 +106,7 @@ nav ul li a:hover::after{
 
 .sub-title{
     font-size: 60px;
+    font-family: "Crimson Text", "Rajdhani", sans-serif;
     font-weight: 600;
     color: #fff;
 }
@@ -199,11 +204,47 @@ nav ul li a:hover::after{
     transform: translate(-10px);
 }
 
-/* ---------------Portfolio-------------- */
+.Services-btn{
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px; 
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.Services-btn:hover{
+    background-color: #d736a1;
+}
+
+/* ---------------My Works-------------- */
 #portfolio{
     padding: 50px 0;
 }
 
+.butsubmit2{
+    display: block;
+    margin: 2px;
+    width: fit-content;
+    border: 1px solid #000000 ;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #080808;
+    color: #ffffff;
+    transition: background 0.5s;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.butsubmit2:hover{
+    background: #ff0000;
+}
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -274,10 +315,10 @@ nav ul li a:hover::after{
     margin: 50px auto;
     width: fit-content;
     border: 1px solid #000000 ;
-    padding: 14px 50px;
+    padding: 14px 10px;
     border-radius: 10px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: white;
     transition: background 0.5s;
 }
 
@@ -296,7 +337,7 @@ nav ul li a:hover::after{
 }
 
 .contact-left p {
-    margin-top: 30%;
+    margin-top: 40px;
 }
 
 .contact-left p i{
@@ -306,7 +347,7 @@ nav ul li a:hover::after{
 }
 
 .social-icons{
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .social-icons a{
     text-decoration: none;
@@ -338,16 +379,36 @@ form input, form textarea{
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: white;
     font-size: 18px;
     border-radius: 6px;
+    resize: none;
 }
 
-form .btn2{
+form .btn2 .{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+.butsubmit{
+    display: block;
+    margin: 8px 22px;
+    width: fit-content;
+    border: 1px solid #000000 ;
+    padding: 14px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #080808;
+    color: #ffffff;
+    transition: background 0.5s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.butsubmit:hover{
+    background: #ff0000;
 }
 
 .copyright{
