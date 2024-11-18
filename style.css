@@ -158,7 +158,6 @@ nav ul li a:hover::after{
 } 
 
 
-
 /* -------- My services----------- */
 #services{
     padding: 30px 0;
@@ -245,6 +244,7 @@ nav ul li a:hover::after{
 .butsubmit2:hover{
     background: #ff0000;
 }
+
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
