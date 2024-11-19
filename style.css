@@ -157,6 +157,11 @@ nav ul li a:hover::after{
     display: block;
 } 
 
+#skills{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
 
 /* -------- My services----------- */
 #services{
