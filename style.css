@@ -495,6 +495,22 @@ form .btn2 {
         flex-basis: 100%;
     }
 
+    .about-col-2 p{
+        margin: 20px;
+        text-align: justify;
+    }
+
+    /* Service related */
+    .services-list {
+        grid-gap: 20px;
+        margin-top: 16px;
+    }
+
+    .services-list div {
+    font-size: 14px;
+    padding: 22px 40px;
+    }
+
     /* Work Related */
     .work-list{
         grid-gap: 20px;
@@ -512,7 +528,11 @@ form .btn2 {
     .contact-right{
         flex-basis: 100%;
     }
-    
+
+    .copyright {
+    padding: 12px 0;
+    margin-top: -12px;
+    }
 }
 
 /* Css For Sidebar Mobile */
