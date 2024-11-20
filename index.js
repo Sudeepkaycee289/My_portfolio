@@ -1,11 +1,15 @@
+// JS For Sidebar
+
 function showSidebar() {
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "flex";
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.add('active'); // Add 'active' class to show the sidebar
 }
+
 function hideSidebar() {
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "none";
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.remove('active'); // Remove 'active' class to hide the sidebar
 }
+
 
 // JS for Skills
 var tablinks = document.getElementsByClassName("tab-links");

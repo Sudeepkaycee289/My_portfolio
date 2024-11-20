@@ -68,6 +68,10 @@ nav ul li a {
     justify-content: flex-start;
 }
 
+.sidebar.active {
+    display: flex; /* Show sidebar when active */
+}
+
 .sidebar li{
     width: 100%;
 }
@@ -77,7 +81,7 @@ nav ul li a {
 }
 
 .menu_btn{
-    display: hidden;
+    display: none;
 }
 
 /* Add underline effect to links on hover */
@@ -114,7 +118,7 @@ nav ul li a:hover::after {
 .work {
     width: 300px;
     height: 400px;
-    background-color: grey;
+    background-color: #443b49;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     position: relative;
@@ -136,6 +140,11 @@ nav ul li a:hover::after {
     top: 50%;
     left: 50% ;
     transform:translate(-50%,-50%);
+    backdrop-filter: blur(10px);
+}
+
+.work img:hover{
+    filter: blur(20px)
 }
 
 .work-info {
@@ -160,6 +169,10 @@ nav ul li a:hover::after {
 .work-info p {
     margin-top: 20px;
     align-items: center;
+    text-align: justify;
+    padding: 18px;
+    color: #0e0014;
+    font-weight: 500;
 }
 
 .see-more {
@@ -212,12 +225,13 @@ nav ul li a:hover::after {
 }
 
 
-@media(max-width: 800px){
-    .hideOnMobile{
-        display: none;
+@media (max-width: 800px) {
+    .menu_btn {
+        display: block; 
     }
-    .menu_btn{
-        display: block;
+
+    .hideOnMobile {
+        display: none; 
     }
 }
 
