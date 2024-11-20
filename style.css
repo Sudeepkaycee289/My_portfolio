@@ -152,6 +152,10 @@ nav ul li a:hover::after {
     flex-basis: 60%;
 }
 
+.about-col-2{
+    text-align: justify;
+}
+
 .sub-title{
     font-size: 60px;
     font-family: "Crimson Text", "Rajdhani", sans-serif;
@@ -482,6 +486,10 @@ form .btn2 {
         font-size: 28px;
     }
 
+    .container{
+        padding: 10px 5%;
+    }
+
 /* About Related */
     #about{
         padding: 0 0;
@@ -496,7 +504,7 @@ form .btn2 {
     }
 
     .about-col-2 p{
-        margin-right: 36px;
+        margin-right: 32px;
         text-align: justify;
     }
 
