@@ -129,8 +129,7 @@ nav ul li a:hover::after {
 /* About */
 
 #about{
-    padding-top: 72px;
-    padding-bottom: 18px;
+    padding: 18px 0;
     color: #ababab;
 }
 
@@ -475,18 +474,19 @@ form .btn2 {
     }
 
     .header-text h1 {
-        font-size: 42px;
+        font-size: 52px;
         margin-top: 14px;
     }
 
     .header-text p {
-        font-size: 20px;
+        font-size: 28px;
     }
 
 /* About Related */
-    .about{
-        padding: 72px;
+    #about{
+        padding: 0 0;
     }
+
     .about-col-1{
         flex-basis: 100%;
     }
