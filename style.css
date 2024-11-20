@@ -129,7 +129,8 @@ nav ul li a:hover::after {
 /* About */
 
 #about{
-    padding: 18px  0;
+    padding-top: 72px;
+    padding-bottom: 18px;
     color: #ababab;
 }
 
@@ -472,7 +473,20 @@ form .btn2 {
         background-image:url() ;
         height: 58vh;
     }
+
+    .header-text h1 {
+        font-size: 42px;
+        margin-top: 14px;
+    }
+
+    .header-text p {
+        font-size: 20px;
+    }
+
 /* About Related */
+    .about{
+        padding: 72px;
+    }
     .about-col-1{
         flex-basis: 100%;
     }
