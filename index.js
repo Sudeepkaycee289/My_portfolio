@@ -1,23 +1,22 @@
-function showSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "flex";
 }
-function hideSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'none'
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
 }
 
-
-// var tablinks = document.getElementsByClassName("tab-links")
-// var tabcontents = document.getElementsByClassName("tab-contents")
-// function opentab(event, tabname){
-//     for(let tablink of tablinks){
-//         tablink.classList.remove("active-link");
-//     }
-//     for(let tabcontent of tabcontents){
-//         tabcontent.classList.remove("active-tab");
-//     }
-//     event.currentTarget.classList.add("active-link");
-//     document.getElementById(tabname).classList.add("active-tab");
-//     document.getElementById(tabname).classList.add("active-link");
-// }
+// JS for Skills
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(event, tabname) {
+  for (let tablink of tablinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (let tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}

@@ -157,7 +157,7 @@ nav ul li a:hover::after{
     display: block;
 } 
 
-#skills{
+.Tech-Skills{
     display: flex;
     flex-direction: row;
     gap: 60px;
@@ -390,7 +390,7 @@ form input, form textarea{
     resize: none;
 }
 
-form .btn2 .{
+form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
@@ -437,4 +437,3 @@ form .btn2 .{
     }
 }
 
-1:31:08

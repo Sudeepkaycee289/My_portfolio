@@ -43,17 +43,19 @@
                     <h1 class="sub-title">About me </h1>
                     <p>Hello, my name is Sudip KC, and I am from Nepal. I am currently pursuing a degree in Software Engineering, where I am honing my skills in various aspects of software development. Alongside my studies, I specialize in UI/UX Design and have experience in frontend development, combining creativity with technical expertise to create engaging and user-friendly interfaces.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('edecutaion')">Education</p>
-                        <p class="tab-links" onclick="opentab('Tools')">Tools</p>
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'edecutaion')">Education</p>
+                        <p class="tab-links" onclick="opentab(event, 'Tools')">Tools</p>
                     </div>
                     <div class= "tab-contents active-tab" id="skills">
-                        <ul>
-                            <li ><span>Design</span><br><li>Ux Research</li><li>Ui/Interaction Design</li><li>Agile Development</li><li>Wireframing   </li><li>Prototyping</li><li>Data Analysis</li><li>Illustrations</li></li> 
-                        </ul>
-                        <ul><li ><span>Soft skills</span><br><li>Presentation</li><li>Documentation</li><li>Communication</li><li>Adaptability</li></li>
-                        </ul>
+                        <div class="Tech-Skills">
+                            <ul>
+                             <li ><span>Design</span><br><li>Ux Research</li><li>Ui/Interaction Design</li><li>Agile Development</li><li>Wireframing   </li><li>Prototyping</li><li>Data Analysis</li><li>Illustrations</li></li> 
+                            </ul>
+                                 <ul><li ><span>Soft skills</span><br><li>Presentation</li><li>Documentation</li><li>Communication</li><li>Adaptability</li></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
@@ -177,8 +179,8 @@
         </div>
     </div>
 
-
-    <script>
+<script src="/index.js"></script>
+    <!-- <script>
         var tablinks = document.getElementsByClassName("tab-links")
         var tabcontents = document.getElementsByClassName("tab-contents")
         function opentab(tabname){
@@ -191,6 +193,6 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-    </script>
+    </script> -->
 </body>
 </html>
