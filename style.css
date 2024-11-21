@@ -75,10 +75,6 @@ nav ul li a {
     justify-content: flex-start;
 }
 
-.bar{
-    /* display: none !important; */
-}
-
 .sidebar.active {
     display: flex;
 }

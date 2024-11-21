@@ -118,7 +118,7 @@ nav ul li a:hover::after {
 .work {
     width: 300px;
     height: 400px;
-    background-color: #443b49;
+    background-color: #1a1a1a;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     position: relative;
@@ -136,7 +136,7 @@ nav ul li a:hover::after {
     border-radius: 10px;
     position: absolute;
     display:flex;
-    transition: transform 0.5s ;
+    transition: transform 0.8s ;
     top: 50%;
     left: 50% ;
     transform:translate(-50%,-50%);
@@ -156,7 +156,7 @@ nav ul li a:hover::after {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(74, 66, 52, 0.5);
+    background-color: hsl(240, 15%, 27%, 0.8);
     color: white;
     transition: opacity 0.3s ease;
 }
@@ -171,7 +171,7 @@ nav ul li a:hover::after {
     align-items: center;
     text-align: justify;
     padding: 18px;
-    color: #0e0014;
+    color: #F5F5F5;
     font-weight: 500;
 }
 
@@ -180,11 +180,12 @@ nav ul li a:hover::after {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
-    color: white;
+    background-color: #5050F0;
+    color: #FFFFFF;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
+    text-decoration: none;
     cursor: pointer;
 }
 
