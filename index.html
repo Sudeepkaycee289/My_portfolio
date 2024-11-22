@@ -12,6 +12,10 @@
     <style> @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap'); </style>
 </head>
 <body>
+     <div class="theme-toggle">
+         <button id="toggleTheme">☀︎</button>
+    </div>
+    
     <div id="header">
         <div class="container">
             <nav>
@@ -37,13 +41,32 @@
                     <li class="menu_btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
-            <div class="header-text">
-                <p>UI/UX Designer</p>
-                <p>Programmer</p>
-                <h1>Hi, I'm <span>Sudip</span><br> Kc from Nepal.</h1>
+            <div class="hero">
+                <div class="container-right">
+                    <img src="/Images/Container right.jpg" alt="">
+                </div>
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <p>Programmer</p>
+                    <h1>Hi, I'm <span>Sudip</span><br> Kc from Nepal.</h1>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sudipkc289" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://github.com/Sudeepkaycee289"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/sudipkc289/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sudip-kc-946097211/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
+
     <!-- about me -->
     <div id="about">
         <div class="container">
@@ -169,9 +192,11 @@
                     <p><i class="fa-solid fa-square-phone"></i>9806735504</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/sudipkc289"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://twitter.com/kcsudip233"><i class="fa-brands fa-twitter"></i></a>
                         <a href="https://www.instagram.com/sudipkc289/"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://github.com/Sudeepkaycee289"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sudip-kc-946097211/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
                     <a href="Images/Sudip Kc CV.pdf" download class="btn btn2">Download CV</a>
                 </div>
@@ -184,7 +209,7 @@
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn">  Submit  </button>
+                        <button type="submit" class="btn" id="submit">  Submit  </button>
                     </form>
                 </div>
             </div>

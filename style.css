@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Rajdhani", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -14,12 +14,163 @@ body{
     color: #fff;
 
 }
+
+/* Css for Light and dark mode */
+/* Light Mode */
+body.light-mode {
+    background: #f9f9f9;
+    color: #242124;
+}
+
+body.light-mode nav ul li a {
+    color: #242124;
+}
+
+body.light-mode .services-list div {
+    background: #f1f1f1;
+    color: #242124;
+}
+
+body.light-mode .services-list div:hover {
+    background: #ff004f;
+    color: #F5F5F5;
+}
+
+body.light-mode .btn {
+    background-color: #ffffff;
+    color: #242124;
+}
+
+body.light-mode .btn:hover {
+    background: #242124;
+    color: white;
+}
+
+body.light-mode form input, body.light-mode form textarea {
+    background: #ffffff;
+    color: #242124;
+}
+
+/* Sub-title Color Based on Theme */
+.sub-title {
+    font-size: 60px;
+    font-family: "Crimson Text", "Rajdhani", sans-serif;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* Define Colors for Light Theme */
+body.light-mode {
+    color: black;
+}
+
+/* Define Colors for Dark Theme */
+body.dark-mode {
+    color: white;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px;  /* Distance from the right of the viewport */
+    z-index: 1000;
+}
+
+#toggleTheme {
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background: #ff004f;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#toggleTheme:hover {
+    transform: scale(1.1);
+    background: #61001f;
+}
+
+/* Remaining body content */
+
 #header{
-    background-image: url(Images/Background.jpg);
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(43deg, #4158D0, #C850C0, #FFCC70);
+    background-size: 300% 300%; /* Large size for smooth transitions */
+    animation: gradientFlow 18s infinite ease-in-out; /* Animation for free-flowing gradient */
+}
+
+
+/* Flowing Gradient Animation */
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center; 
+    padding: 80px 20px;  
+    height: 100vh; 
+}
+
+.container-right {
+    flex: 0 0 50%;
+    height: auto;
+    order: 2;
+}
+
+.container-right img {
+    width: 90%; 
+    height: auto;  
+    object-fit: cover; 
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: bounce 4s ease-in-out infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up 10px */
+    }
+}
+
+/* Hover Effects */
+.container-right img:hover {
+    transform: scale(1.8); /* Scale the image slightly on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-text {
+    flex: 1;  
+    padding: 20px;  
+    max-width: 50%; 
+}
+
+.header-text p, h1 {
+    font-weight: 600;
 }
 
 .container{
@@ -109,7 +260,7 @@ nav ul li a:hover::after {
 /*CSS for Header Text */
 
 .header-text{
-    margin-top: 18%;
+    margin-top: -5%;
     font-size: 30px;
 }
 
@@ -126,7 +277,6 @@ nav ul li a:hover::after {
 
 #about{
     padding: 18px 0;
-    color: #ababab;
 }
 
 .row{
@@ -152,12 +302,24 @@ nav ul li a:hover::after {
     text-align: justify;
 }
 
-.sub-title{
-    font-size: 60px;
-    font-family: "Crimson Text", "Rajdhani", sans-serif;
-    font-weight: 600;
-    color: #fff;
+/* About Section Text Color Based on Theme */
+.about-col-2 {
+    color: var(--about-col-2-color);
+    transition: color 0.3s ease;
 }
+.about-col-2 p{
+    font-size: 21px;
+}
+
+/* Define Colors for Light and Dark Modes */
+body.light-mode {
+    color: black;
+}
+
+body.dark-mode {
+    color: white;
+}
+
 
 .tab-titles{
     display: flex;
@@ -166,7 +328,7 @@ nav ul li a:hover::after {
 
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -190,6 +352,7 @@ nav ul li a:hover::after {
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    font-size: 18px;
 }
 
 .tab-contents ul li span{
@@ -377,7 +540,7 @@ nav ul li a:hover::after {
     margin: 18px auto;
     width: fit-content;
     border: 1px solid #000000 ;
-    padding: 14px 10px;
+    padding: 12px 16px;
     border-radius: 10px;
     text-decoration: none;
     color: white;
@@ -423,12 +586,18 @@ nav ul li a:hover::after {
 
 .social-icons a:hover{
     color: #ff004f;
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
 .btn.btn2{
     display: inline-block;
     color: #ffffff;
+}
+
+#submit{
+    width: 7rem;
+    font-size: 1rem;
+
 }
 
 .contact-right form{
@@ -469,22 +638,60 @@ form .btn2 {
 @media only screen and (max-width: 600px){
     /* Header Related */
     #header{
-        background-image:url() ;
-        height: 58vh;
+        height: 100vh;
+    }
+    
+    .container{
+        padding: 4px 12px;
     }
 
     .header-text h1 {
-        font-size: 52px;
-        margin-top: 14px;
+        font-size: 38px;
+        margin-top: 8px;
+        text-align: center;
     }
 
+    .header-text {
+        margin-top: 8px;
+        font-size: 0px;
+        max-width: 100%;
+        margin: auto;
+        order: 2;
+}
+
+    .social-icons {
+        margin-top: 0px;
+        text-align: center;
+    }
+    
+    .social-icons a {
+        margin-top: 8px;
+        font-size: 18px;
+        color: #ffffff;
+    }
+    
     .header-text p {
-        font-size: 28px;
+        font-size: 24px;
+        text-align: center;
     }
 
-    .container{
-        padding: 10px 5%;
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 14px;
     }
+
+    .container-right {
+        max-width: 80%;
+        margin-top: 24px;
+        order: 1;
+    }
+    
+    .logo img {
+        width: 98px;
+
+    }
+
 
 /* About Related */
     #about{
@@ -502,8 +709,14 @@ form .btn2 {
     .about-col-2 p{
         margin-right: 32px;
         text-align: justify;
+        font-size: 13px;
     }
 
+    .tab-contents ul li {
+        list-style: none;
+        margin: 10px 0;
+        font-size: 14px;
+    }
     /* Service related */
     .services-list {
         grid-gap: 20px;

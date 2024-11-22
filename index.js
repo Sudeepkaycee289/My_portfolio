@@ -10,6 +10,22 @@ function hideSidebar() {
   sidebar.classList.remove('active'); // Remove 'active' class to hide the sidebar
 }
 
+// Js for Light / Dark Mode
+    const toggleButton = document.getElementById("toggleTheme");
+    const body = document.body;
+
+    toggleButton.addEventListener("click", () => {
+        // Toggle light mode class on the body
+        body.classList.toggle("light-mode");
+
+        // Change button icon based on the theme
+        if (body.classList.contains("light-mode")) {
+            toggleButton.textContent = "☽︎"; // Moon icon for dark mode
+        } else {
+            toggleButton.textContent = "☀︎"; // Sun icon for light mode
+        }
+    });
+
 
 // JS for Skills
 var tablinks = document.getElementsByClassName("tab-links");
