@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +9,13 @@
     scroll-behavior: smooth;
 }
 
-/* Css For Head */
+/* Body Styles */
 body {
     background: #242124;
     color: #fff;
 }
 
-/* Light and Dark Mode */
+/* Light Mode Styles */
 body.light-mode {
     background: #f9f9f9;
     color: #242124;
@@ -24,13 +25,17 @@ body.light-mode nav ul li a,
 body.light-mode .services-list div,
 body.light-mode .btn,
 body.light-mode form input,
-body.light-mode form textarea {
+body.light-mode form textarea,
+body.light-mode .social-icons a,
+body.light-mode .header-text h1 span {
     color: #242124;
 }
 
 body.light-mode .services-list div,
 body.light-mode .btn {
     background: #f1f1f1;
+    border: 2px solid #000000;
+    border-radius: 5px;
 }
 
 body.light-mode .services-list div:hover,
@@ -39,11 +44,58 @@ body.light-mode .btn:hover {
     color: #F5F5F5;
 }
 
+body.light-mode form input,
+body.light-mode form textarea {
+    width: 100%;
+    border: 2px solid #000000;
+    outline:#000000;
+    background: #bab9b9;
+    padding: 15px;
+    margin: 12px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    resize: none;
+}
+
+body.light-mode #header {
+    background-image: linear-gradient(120deg, #fdfbfb 20%, #d5f7e7 100%);
+    transition: background-image 0.3s ease;
+}
+
+/* Dark Mode Styles */
 body.dark-mode {
+    background: #242124;
     color: white;
 }
 
-/* Sub-title Color Based on Theme */
+body.dark-mode nav ul li a,
+body.dark-mode .services-list div,
+body.dark-mode .btn,
+body.dark-mode form input,
+body.dark-mode form textarea,
+body.dark-mode .social-icons a,
+body.dark-mode .header-text h1 span {
+    color: white;
+}
+
+body.dark-mode .services-list div,
+body.dark-mode .btn {
+    background: #262626;
+}
+
+body.dark-mode .services-list div:hover,
+body.dark-mode .btn:hover {
+    background: #ff004f;
+    color: #F5F5F5;
+}
+
+body.dark-mode #header {
+    background-image: linear-gradient(120deg, #242124 20%, #d5f7e7 100%);
+    transition: background-image 0.3s ease;
+}
+
+/* Sub-title Styles */
 .sub-title {
     font-size: 60px;
     font-family: "Crimson Text", "Rajdhani", sans-serif;
@@ -51,7 +103,7 @@ body.dark-mode {
     transition: color 0.3s ease;
 }
 
-/* Theme Toggle Button */
+/* Theme Toggle Button Styles */
 .theme-toggle {
     position: fixed;
     bottom: 20px;
@@ -76,12 +128,11 @@ body.dark-mode {
     background: #61001f;
 }
 
-/* Header */
+/* Header Styles */
 #header {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(43deg, #4158D0, #C850C0, #FFCC70);
-    background-size: 300% 300%;
+    background-image: linear-gradient(120deg, #242124 20%, #d5f7e7 100%);
     animation: gradientFlow 18s infinite ease-in-out;
 }
 
@@ -97,6 +148,7 @@ body.dark-mode {
     }
 }
 
+/* Hero Section Styles */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -149,7 +201,7 @@ body.dark-mode {
     padding: 10px 10%;
 }
 
-/* Navbar */
+/* Navbar Styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -197,7 +249,7 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Sidebar */
+/* Sidebar Styles */
 .sidebar {
     position: fixed;
     top: 0;
@@ -230,7 +282,7 @@ nav ul li a:hover::after {
     display: none;
 }
 
-/* Header Text */
+/* Header Text Styles */
 .header-text {
     margin-top: -5%;
     font-size: 30px;
@@ -245,7 +297,7 @@ nav ul li a:hover::after {
     color: #ff004f;
 }
 
-/* About */
+/* About Section Styles */
 #about {
     padding: 18px 0;
 }
@@ -276,7 +328,7 @@ nav ul li a:hover::after {
     font-size: 21px;
 }
 
-/* Tabs */
+/* Tabs Styles */
 .tab-titles {
     display: flex;
     margin: 20px 0 40px;
@@ -330,7 +382,7 @@ nav ul li a:hover::after {
     gap: 60px;
 }
 
-/* Services */
+/* Services Section Styles */
 #services {
     padding: 18px 0;
 }
@@ -396,7 +448,7 @@ nav ul li a:hover::after {
     background-color: #d736a1;
 }
 
-/* Portfolio */
+/* Portfolio Section Styles */
 #portfolio {
     padding: 18px 0;
 }
@@ -493,7 +545,7 @@ nav ul li a:hover::after {
     display: block;
     margin: 18px auto;
     width: fit-content;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     padding: 12px 16px;
     border-radius: 10px;
     text-decoration: none;
@@ -506,7 +558,7 @@ nav ul li a:hover::after {
     background: #ff0000;
 }
 
-/* Contact */
+/* Contact Section Styles */
 .contact-left {
     flex-basis: 35%;
 }
@@ -559,11 +611,11 @@ nav ul li a:hover::after {
 
 form input, form textarea {
     width: 100%;
-    border: 0;
-    outline: none;
+    border: 2px solid #ffffff;
+    outline:#000000;
     background: #262626;
     padding: 15px;
-    margin: 15px 0;
+    margin: 12px 0;
     color: white;
     font-size: 18px;
     border-radius: 6px;
@@ -586,40 +638,13 @@ form .btn2 {
     margin-top: 20px;
 }
 
-/* Small Screen */
+/* Small Screen Styles */
 @media only screen and (max-width: 600px) {
     #header {
         height: 100vh;
     }
 
     .container {
-        padding: 4px 12px;
-    }
-
-    .header-text h1 {
-        font-size: 38px;
-        margin-top: 8px;
-        text-align: center;
-    }
-
-    .header-text {
-        margin-top: 8px;
-        font-size: 0px;
-        max-width: 100%;
-        margin: auto;
-        order: 2;
-    }
-
-    .social-icons {
-        margin-top: 0px;
-        text-align: center;
-    }
-
-    .social-icons a {
-        margin-top: 8px;
-        font-size: 18px;
-        color: #ffffff;
-    }
 
     .header-text p {
         font-size: 24px;
