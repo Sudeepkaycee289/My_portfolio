@@ -63,6 +63,22 @@ body.light-mode #header {
     transition: background-image 0.3s ease;
 }
 
+body.light-mode .Services-btn {
+    color: #242124;
+    background: #f1f1f1;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+body.light-mode .Services-btn:hover {
+    background-color: #ff004f;
+    color: #F5F5F5;
+}
+
+body.light-mode .copyright {
+    background: #bab9b9;
+    font-size: 22px;
+}
 /* Dark Mode Styles */
 body.dark-mode {
     background: #242124;
@@ -94,6 +110,20 @@ body.dark-mode #header {
     background-image: linear-gradient(120deg, #242124 20%, #d5f7e7 100%);
     transition: background-image 0.3s ease;
 }
+
+body.dark-mode .Services-btn {
+    color: white;
+    background: #262626;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+body.dark-mode .Services-btn:hover {
+    background-color: #ff004f;
+    color: #F5F5F5;
+}
+
+
 
 /* Sub-title Styles */
 .sub-title {
@@ -396,15 +426,18 @@ nav ul li a:hover::after {
 
 .services-list div {
     background: #262626;
-    padding: 40px;
+    padding: 16px 18px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    position: relative;
 }
 
 .services-list p {
     text-align: justify;
+    font-size: 14px;
+    white-space-collapse: preserve-breaks;
 }
 
 .services-list div i {
@@ -422,7 +455,7 @@ nav ul li a:hover::after {
     text-decoration: none;
     color: white;
     font-size: 12px;
-    margin-top: 20px;
+    margin-top: 46px;
     display: inline-block;
 }
 
@@ -432,16 +465,19 @@ nav ul li a:hover::after {
 }
 
 .Services-btn {
-    color: white;
-    border: none;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     transition: background-color 0.3s ease;
     cursor: pointer;
+    position: relative;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .Services-btn:hover {
@@ -635,6 +671,7 @@ form .btn2 {
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
+    font-size: 22px;
     margin-top: 20px;
 }
 
