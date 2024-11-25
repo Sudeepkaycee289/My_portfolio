@@ -675,16 +675,24 @@ form .btn2 {
     margin-top: 20px;
 }
 
-/* Small Screen Styles */
+                /* Small Screen Styles */
 @media only screen and (max-width: 600px) {
     #header {
         height: 100vh;
     }
 
-    .container {
+    .container .header-text {
+        padding: 12px;
+        max-width: 100%;
+    }
 
-    .header-text p {
+    .container .header-text p {
         font-size: 24px;
+        text-align: center;
+    }
+
+    .container .header-text h1 {
+        font-size: 32px;
         text-align: center;
     }
 
@@ -698,6 +706,11 @@ form .btn2 {
         max-width: 80%;
         margin-top: 24px;
         order: 1;
+    }
+
+    .header-text{
+        margin: 26px 0px;
+        order: 2;
     }
 
     .logo img {

@@ -1,10 +1,117 @@
-
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #242124;
     font-family: "Rajdhani", sans-serif;
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#toggleTheme {
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background: #ff004f;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#toggleTheme:hover {
+    transform: scale(1.1);
+    background: #61001f;
+}
+
+/* Light Mode Styles */
+body.light-mode{
+    background: #f9f9f9;
+    color: #242124;
+}
+
+body.light-mode #header {
+    background-color: #e6e6e6;
+    color: #242124;
+}
+
+body.light-mode .work {
+    background-color: #f1f1f1;
+    border: 1px solid #000000;
+}
+
+body.light-mode .work-info {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #242124;
+}
+
+body.light-mode .work-info p {
+    margin-top: 20px;
+    align-items: center;
+    text-align: justify;
+    padding: 18px;
+    color: #000000;
+    font-weight: 500;
+}
+
+body.light-mode .see-more {
+    background-color: #f1f1f1;
+    color: #242124;
+    border: 2px solid #000000;
+}
+
+body.light-mode .see-more:hover {
+    background-color: #ff004f;
+    color: #F5F5F5;
+}
+
+body.light-mode nav ul li a {   
+    color: #000000;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #242124;
+    color: white;
+}
+
+body.dark-mode #header {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+body.dark-mode nav ul li a {   
+    color: #ffffff;
+}
+
+
+body.dark-mode .work {
+    background-color: #1a1a1a;
+    border: 1px solid #e0e0e0;
+}
+
+body.dark-mode .work-info {
+    background-color: rgba(36, 33, 36, 0.8);
+    color: white;
+}
+body.dark-mode .work-info p{
+    background-color: rgba(36, 33, 36, 0.8);
+    color: white;
+}
+
+body.dark-mode .see-more {
+    background-color: #292929;
+    color: #FFFFFF;
+}
+
+body.dark-mode .see-more:hover {
+    background-color: #ff0000;
 }
 
 /* CSS FOR NAVBAR */
@@ -59,17 +166,19 @@ nav ul li a {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgb(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    text-align: right; /* Align items to the right */
+    padding-right: 20px; /* Add padding to the right */
 }
 
 .sidebar.active {
-    display: flex; /* Show sidebar when active */
+    display: flex;
 }
 
 .sidebar li{
@@ -148,8 +257,6 @@ nav ul li a:hover::after {
 }
 
 .work-info {
-    width: 300px;
-    height: 100%;
     text-align: center;
     opacity: 0;
     position: absolute;
@@ -166,14 +273,6 @@ nav ul li a:hover::after {
     align-items: center;
 }
 
-.work-info p {
-    margin-top: 20px;
-    align-items: center;
-    text-align: justify;
-    padding: 18px;
-    color: #F5F5F5;
-    font-weight: 500;
-}
 
 .see-more {
     position: absolute;
@@ -213,15 +312,26 @@ nav ul li a:hover::after {
 /* Media Query for mobile phones */
 @media only screen and (max-width: 600px) {
     #header {
-      padding: 20px; /* Increased padding */
+      padding: 0px; /* Increased padding */
     }
     
     .logo {
       margin-right: 0; /* Remove right margin for logo on mobile */
+      
     }
+
+    .logo img {
+        width: 98px;
+    }
+    
     .container{
         grid-template-columns: repeat(1,270px);
         margin-left: 30px;
+    }
+    
+    .sidebar {
+        text-align: right; /* Ensure items are aligned to the right in mobile view */
+        padding-right: 46px; /* Add padding to the right */
     }
 }
 
