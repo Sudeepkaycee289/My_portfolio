@@ -70,7 +70,7 @@ body.light-mode .Services-btn {
     border-radius: 5px;
 }
 
-body.light-mode .services-list p{
+body.light-mode .services-list p, .about-col-2 p, .contact-left p{
     color: #000000;
 }
 
@@ -108,7 +108,7 @@ body.dark-mode .btn,
 body.dark-mode form input,
 body.dark-mode form textarea,
 body.dark-mode .social-icons a,
-body.dark-mode .header-text h1 span {
+body.dark-mode .header-text h1 span, .contact-left p {
     color: white;
 }
 
