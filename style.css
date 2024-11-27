@@ -79,6 +79,13 @@ body.light-mode .copyright {
     background: #bab9b9;
     font-size: 22px;
 }
+
+body.light-mode .work{
+    border: 2px solid #000000;
+    border-radius: 6px;
+}
+
+
 /* Dark Mode Styles */
 body.dark-mode {
     background: #242124;
@@ -123,7 +130,9 @@ body.dark-mode .Services-btn:hover {
     color: #F5F5F5;
 }
 
-
+body.light-mode #toggleTheme{
+    padding: 10px 18px;
+}
 
 /* Sub-title Styles */
 .sub-title {
@@ -201,6 +210,8 @@ body.dark-mode .Services-btn:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     animation: bounce 4s ease-in-out infinite;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
 }
 
 @keyframes bounce {
@@ -292,7 +303,7 @@ nav ul li a:hover::after {
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: revert-layer;
     justify-content: flex-start;
 }
 
@@ -432,6 +443,8 @@ nav ul li a:hover::after {
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
     position: relative;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
 }
 
 .services-list p {
@@ -481,7 +494,7 @@ nav ul li a:hover::after {
 }
 
 .Services-btn:hover {
-    background-color: #d736a1;
+    background-color: #2a1018;
 }
 
 /* Portfolio Section Styles */
@@ -519,6 +532,8 @@ nav ul li a:hover::after {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
 }
 
 .work img {
@@ -774,5 +789,4 @@ form .btn2 {
     .sidebar {
         width: 100%;
     }
-}
 }
