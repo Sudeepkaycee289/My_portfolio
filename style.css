@@ -70,6 +70,10 @@ body.light-mode .Services-btn {
     border-radius: 5px;
 }
 
+body.light-mode .services-list p{
+    color: #000000;
+}
+
 body.light-mode .Services-btn:hover {
     background-color: #ff004f;
     color: #F5F5F5;
