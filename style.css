@@ -108,7 +108,7 @@ body.dark-mode .btn,
 body.dark-mode form input,
 body.dark-mode form textarea,
 body.dark-mode .social-icons a,
-body.dark-mode .header-text h1 span, .contact-left p {
+body.dark-mode .header-text h1 span, .contact-left p, .about-col-2 p {
     color: white;
 }
 
