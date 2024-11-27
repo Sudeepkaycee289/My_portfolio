@@ -85,6 +85,12 @@ body.light-mode .work{
     border-radius: 6px;
 }
 
+body.light-mode .work .layer h3 , p{
+color: #ffffff;
+}
+
+
+
 
 /* Dark Mode Styles */
 body.dark-mode {
